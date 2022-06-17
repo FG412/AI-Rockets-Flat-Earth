@@ -22,7 +22,7 @@ public class PlaneLandingAgent : Agent
     public override void OnEpisodeBegin()
     {
         rocket.restart();
-        rocket.transform.localPosition=new Vector3(Random.Range(-5, 5), 19 + Random.Range(0, 10), Random.Range(-5, 5));
+        rocket.transform.localPosition=new Vector3(0, 19 + Random.Range(0, 10), 0);
         rocket.transform.rotation=Quaternion.Euler(0,0,0);
         rocket.setIgnite(true);
         inside=false;
