@@ -65,7 +65,6 @@ public class PlanePilotAgent : Agent
 
         previousDistance = currentDistance;
 
-
     }
 
     public override void Heuristic(in ActionBuffers actionsOut)
