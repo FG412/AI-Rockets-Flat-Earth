@@ -4520,13 +4520,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 659732883}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b31d3be9f4f56874699f712683165c4c, type: 3}
+  m_Script: {fileID: 11500000, guid: 847636648bb20d14d9d9a81618ac5704, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   agentParameters:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
-  MaxStep: 1000
+  MaxStep: 2000
+  landingModel: {fileID: 5022602860645237092, guid: 5bc76e6420b20f74eaf1dbb0424e491b,
+    type: 3}
   target: {fileID: 134641479}
 --- !u!136 &659732887
 CapsuleCollider:
@@ -4566,7 +4568,7 @@ MonoBehaviour:
     hasUpgradedBrainParametersWithActionSpec: 1
   m_Model: {fileID: 5022602860645237092, guid: e0ce48210e6a4204fb2d8b42a547a1cc, type: 3}
   m_InferenceDevice: 0
-  m_BehaviorType: 0
+  m_BehaviorType: 2
   m_BehaviorName: PlanePilotAgent
   TeamId: 0
   m_UseChildSensors: 1
@@ -7486,12 +7488,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.22320583, y: -0.36578238, z: 0.09064887, w: 0.89898014}
-  m_LocalPosition: {x: 29.046434, y: 30.94961, z: -30.328556}
+  m_LocalRotation: {x: 0.086134814, y: -0.89885545, z: 0.37770343, w: 0.20488977}
+  m_LocalPosition: {x: 12.731205, y: 37.339043, z: 62.624775}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &964094216
 GameObject:
@@ -11669,7 +11671,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1849451938
 Transform:
   m_ObjectHideFlags: 0
@@ -11685,7 +11687,7 @@ Transform:
   - {fileID: 1804166752}
   - {fileID: 1125847462}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1855802937
 GameObject:
